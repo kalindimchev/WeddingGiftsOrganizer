@@ -15,6 +15,7 @@ Features /if enough time/ - Every registered user can check a list with particip
 - List View of all added gifts - user can add a new one or only to observe the list
 - Detail view of every gift - user can add amount to participate in gift
 - Amount input screen
+- Backend - Telerik Backend Services or Parse. Every change should update database
 
 ### Features /if enough time/ ###
 
