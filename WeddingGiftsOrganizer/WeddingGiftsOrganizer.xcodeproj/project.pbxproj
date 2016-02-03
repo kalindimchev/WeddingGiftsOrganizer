@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E247CA791C61CE94008F9DFA /* GiftModel.m */; };
+		E247CA7E1C62014C008F9DFA /* TempData.m in Sources */ = {isa = PBXBuildFile; fileRef = E247CA7D1C62014C008F9DFA /* TempData.m */; };
 		E2D3DAF91C603351006D6E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAF81C603351006D6E3D /* main.m */; };
 		E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFB1C603351006D6E3D /* AppDelegate.m */; };
 		E2D3DAFF1C603351006D6E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFE1C603351006D6E3D /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		E247CA781C61CE94008F9DFA /* GiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftModel.h; sourceTree = "<group>"; };
 		E247CA791C61CE94008F9DFA /* GiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftModel.m; sourceTree = "<group>"; };
+		E247CA7C1C62014C008F9DFA /* TempData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempData.h; sourceTree = "<group>"; };
+		E247CA7D1C62014C008F9DFA /* TempData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempData.m; sourceTree = "<group>"; };
 		E2D3DAF41C603351006D6E3D /* WeddingGiftsOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingGiftsOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D3DAF81C603351006D6E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2D3DAFA1C603351006D6E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		E247CA7B1C620113008F9DFA /* Temp Data */ = {
+			isa = PBXGroup;
+			children = (
+				E247CA7C1C62014C008F9DFA /* TempData.h */,
+				E247CA7D1C62014C008F9DFA /* TempData.m */,
+			);
+			name = "Temp Data";
+			sourceTree = "<group>";
+		};
 		E2D3DAEB1C603351006D6E3D = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		E2D3DAF61C603351006D6E3D /* WeddingGiftsOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				E247CA7B1C620113008F9DFA /* Temp Data */,
 				E247CA771C61CE3A008F9DFA /* Models */,
 				E2D3DAFA1C603351006D6E3D /* AppDelegate.h */,
 				E2D3DAFB1C603351006D6E3D /* AppDelegate.m */,
@@ -164,6 +177,7 @@
 			files = (
 				E2D3DAFF1C603351006D6E3D /* ViewController.m in Sources */,
 				E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */,
+				E247CA7E1C62014C008F9DFA /* TempData.m in Sources */,
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
 				E2D3DAF91C603351006D6E3D /* main.m in Sources */,
 			);

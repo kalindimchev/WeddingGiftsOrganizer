@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/1/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()
