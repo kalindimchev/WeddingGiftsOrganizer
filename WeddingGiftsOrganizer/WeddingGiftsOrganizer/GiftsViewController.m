@@ -1,5 +1,6 @@
 #import "GiftsViewController.h"
 #import "GiftModel.h"
+#import "GiftCell.h"
 
 @interface GiftsViewController ()
 
@@ -37,19 +38,19 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    GiftModel *currentGift = [self.giftsData objectAtIndex:indexPath.row];
     
-    
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"phoneCell"];
-    //PhoneCell *cell = [tableView dequeueReusableCellWithIdentifier:@"phoneCell"];
+    GiftCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-        reuseIdentifier:@"phoneCell"];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"GiftCell" owner:self options:nil] objectAtIndex:0];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.giftsData[indexPath.row] model]];
+    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
     
+    cell.modelLabel = [NSString stringWithFormat:@"%@", [self.giftsData[indexPath.row] model]];
+    cell.stateLabel = [NSString stringWithFormat:@"%f", [self.giftsData[indexPath.row] price]];
+    cell.giftImageView.image = img;
 
     return cell;
 }

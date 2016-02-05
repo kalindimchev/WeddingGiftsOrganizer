@@ -17,6 +17,8 @@
 		E2D3DB071C603351006D6E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */; };
 		E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */; };
 		E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2C61C6461B400D43018 /* PreviewViewController.m */; };
+		E2DDD2CA1C64765400D43018 /* GiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DDD2C91C64765400D43018 /* GiftCell.xib */; };
+		E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CC1C64774D00D43018 /* GiftCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGiftViewController.m; sourceTree = "<group>"; };
 		E2DDD2C51C6461B400D43018 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		E2DDD2C61C6461B400D43018 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		E2DDD2C91C64765400D43018 /* GiftCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftCell.xib; sourceTree = "<group>"; };
+		E2DDD2CB1C64774D00D43018 /* GiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
+		E2DDD2CC1C64774D00D43018 /* GiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 		E2D3DAF61C603351006D6E3D /* WeddingGiftsOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				E2DDD2C81C64761200D43018 /* Views */,
 				E2DDD2C11C63343500D43018 /* ViewControllers */,
 				E247CA7B1C620113008F9DFA /* Temp Data */,
 				E247CA771C61CE3A008F9DFA /* Models */,
@@ -121,6 +127,16 @@
 				E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E2DDD2C81C64761200D43018 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2DDD2C91C64765400D43018 /* GiftCell.xib */,
+				E2DDD2CB1C64774D00D43018 /* GiftCell.h */,
+				E2DDD2CC1C64774D00D43018 /* GiftCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +199,7 @@
 				E2D3DB071C603351006D6E3D /* LaunchScreen.storyboard in Resources */,
 				E2D3DB041C603351006D6E3D /* Assets.xcassets in Resources */,
 				E2D3DB021C603351006D6E3D /* Main.storyboard in Resources */,
+				E2DDD2CA1C64765400D43018 /* GiftCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +217,7 @@
 				E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */,
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
 				E2D3DAF91C603351006D6E3D /* main.m in Sources */,
+				E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
