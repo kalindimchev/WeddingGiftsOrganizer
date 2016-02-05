@@ -3,7 +3,7 @@
 @implementation GiftModel
 
 -(instancetype) initWithModel: (NSString*) model
-                  description: (NSString*) description
+                  giftDescription: (NSString*) giftDescription
                    webSiteUrl: (NSString*) webSiteUrl
                   phoneNumber: (NSString*) phoneNumber
                       address: (NSString*) address
@@ -14,7 +14,7 @@
     
     if (self) {
         self.model = model;
-        self.description = description;
+        self.giftDescription = giftDescription;
         self.webSiteUrl = webSiteUrl;
         self.phoneNumber = phoneNumber;
         self.address = imageUrl;
@@ -28,13 +28,13 @@
 }
 
 +(GiftModel*) giftWithModel: (NSString*) model
-                description: (NSString*) description
+                giftDescription: (NSString*) giftDescription
                  webSiteUrl: (NSString*) webSiteUrl
                 phoneNumber: (NSString*) phoneNumber
                     address: (NSString*) address
                    imageUrl: (NSString*) imageUrl
                    andPrice: (CGFloat) price {
-    return [[GiftModel alloc] initWithModel:model description:description webSiteUrl:webSiteUrl phoneNumber:phoneNumber address:address imageUrl:imageUrl andPrice:price];
+    return [[GiftModel alloc] initWithModel:model giftDescription:giftDescription webSiteUrl:webSiteUrl phoneNumber:phoneNumber address:address imageUrl:imageUrl andPrice:price];
 }
 
 @end

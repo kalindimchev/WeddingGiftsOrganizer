@@ -15,6 +15,8 @@
 		E2D3DB021C603351006D6E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB001C603351006D6E3D /* Main.storyboard */; };
 		E2D3DB041C603351006D6E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB031C603351006D6E3D /* Assets.xcassets */; };
 		E2D3DB071C603351006D6E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */; };
+		E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */; };
+		E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2C61C6461B400D43018 /* PreviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		E2D3DB031C603351006D6E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D3DB061C603351006D6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D3DB081C603351006D6E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DDD2C21C63347E00D43018 /* AddGiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGiftViewController.h; sourceTree = "<group>"; };
+		E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGiftViewController.m; sourceTree = "<group>"; };
+		E2DDD2C51C6461B400D43018 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		E2DDD2C61C6461B400D43018 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		E2D3DAF61C603351006D6E3D /* WeddingGiftsOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				E2DDD2C11C63343500D43018 /* ViewControllers */,
 				E247CA7B1C620113008F9DFA /* Temp Data */,
 				E247CA771C61CE3A008F9DFA /* Models */,
 				E2D3DAFA1C603351006D6E3D /* AppDelegate.h */,
@@ -103,6 +110,17 @@
 				E2D3DAF81C603351006D6E3D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2DDD2C11C63343500D43018 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2DDD2C21C63347E00D43018 /* AddGiftViewController.h */,
+				E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */,
+				E2DDD2C51C6461B400D43018 /* PreviewViewController.h */,
+				E2DDD2C61C6461B400D43018 /* PreviewViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */,
 				E2D3DAFF1C603351006D6E3D /* ViewController.m in Sources */,
 				E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */,
 				E247CA7E1C62014C008F9DFA /* TempData.m in Sources */,
+				E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */,
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
 				E2D3DAF91C603351006D6E3D /* main.m in Sources */,
 			);

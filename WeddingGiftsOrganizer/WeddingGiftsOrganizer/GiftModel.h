@@ -4,7 +4,7 @@
 @interface GiftModel : NSObject
 
 @property (strong, nonatomic) NSString *model;
-@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) NSString *giftDescription;
 @property (strong, nonatomic) NSString *webSiteUrl;
 @property (strong, nonatomic) NSString *phoneNumber;
 @property (strong, nonatomic) NSString *address;
@@ -15,7 +15,7 @@
 @property CGFloat remainingPrice;
 
 -(instancetype) initWithModel: (NSString*) model
-                  description: (NSString*) description
+                  giftDescription: (NSString*) giftDescription
                    webSiteUrl: (NSString*) webSiteUrl
                   phoneNumber: (NSString*) phoneNumber
                       address: (NSString*) address
@@ -23,7 +23,7 @@
                      andPrice: (CGFloat) price;
 
 +(GiftModel*) giftWithModel: (NSString*) model
-                description: (NSString*) description
+            giftDescription: (NSString*) giftDescription
                  webSiteUrl: (NSString*) webSiteUrl
                 phoneNumber: (NSString*) phoneNumber
                     address: (NSString*) address
