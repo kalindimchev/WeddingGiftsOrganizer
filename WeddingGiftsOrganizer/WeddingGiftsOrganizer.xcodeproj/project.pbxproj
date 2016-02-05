@@ -11,7 +11,7 @@
 		E247CA7E1C62014C008F9DFA /* TempData.m in Sources */ = {isa = PBXBuildFile; fileRef = E247CA7D1C62014C008F9DFA /* TempData.m */; };
 		E2D3DAF91C603351006D6E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAF81C603351006D6E3D /* main.m */; };
 		E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFB1C603351006D6E3D /* AppDelegate.m */; };
-		E2D3DAFF1C603351006D6E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFE1C603351006D6E3D /* ViewController.m */; };
+		E2D3DAFF1C603351006D6E3D /* GiftsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */; };
 		E2D3DB021C603351006D6E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB001C603351006D6E3D /* Main.storyboard */; };
 		E2D3DB041C603351006D6E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB031C603351006D6E3D /* Assets.xcassets */; };
 		E2D3DB071C603351006D6E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */; };
@@ -28,8 +28,8 @@
 		E2D3DAF81C603351006D6E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2D3DAFA1C603351006D6E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2D3DAFB1C603351006D6E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2D3DAFD1C603351006D6E3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2D3DAFE1C603351006D6E3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2D3DAFD1C603351006D6E3D /* GiftsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftsViewController.h; sourceTree = "<group>"; };
+		E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftsViewController.m; sourceTree = "<group>"; };
 		E2D3DB011C603351006D6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2D3DB031C603351006D6E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D3DB061C603351006D6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,8 +93,6 @@
 				E247CA771C61CE3A008F9DFA /* Models */,
 				E2D3DAFA1C603351006D6E3D /* AppDelegate.h */,
 				E2D3DAFB1C603351006D6E3D /* AppDelegate.m */,
-				E2D3DAFD1C603351006D6E3D /* ViewController.h */,
-				E2D3DAFE1C603351006D6E3D /* ViewController.m */,
 				E2D3DB001C603351006D6E3D /* Main.storyboard */,
 				E2D3DB031C603351006D6E3D /* Assets.xcassets */,
 				E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */,
@@ -119,6 +117,8 @@
 				E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */,
 				E2DDD2C51C6461B400D43018 /* PreviewViewController.h */,
 				E2DDD2C61C6461B400D43018 /* PreviewViewController.m */,
+				E2D3DAFD1C603351006D6E3D /* GiftsViewController.h */,
+				E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */,
-				E2D3DAFF1C603351006D6E3D /* ViewController.m in Sources */,
+				E2D3DAFF1C603351006D6E3D /* GiftsViewController.m in Sources */,
 				E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */,
 				E247CA7E1C62014C008F9DFA /* TempData.m in Sources */,
 				E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */,

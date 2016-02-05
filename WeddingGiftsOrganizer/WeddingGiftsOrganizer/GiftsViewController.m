@@ -1,17 +1,19 @@
-#import "ViewController.h"
+#import "GiftsViewController.h"
 #import "GiftModel.h"
 
-@interface ViewController ()
+@interface GiftsViewController ()
 
 @property (strong, nonatomic) NSArray *tempData;
 @property (strong, nonatomic) NSArray *giftsData;
 
 @end
 
-@implementation ViewController
+@implementation GiftsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"GIFTS";
     
     self.tempData = [NSArray arrayWithObjects:@"safasdf", @"asdasf", @"afdasdf", nil];
     self.giftsData = [NSArray arrayWithObjects:

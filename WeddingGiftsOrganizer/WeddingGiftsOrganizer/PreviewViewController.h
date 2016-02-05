@@ -1,11 +1,3 @@
-//
-//  PreviewViewController.h
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/4/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 @interface PreviewViewController : UIViewController

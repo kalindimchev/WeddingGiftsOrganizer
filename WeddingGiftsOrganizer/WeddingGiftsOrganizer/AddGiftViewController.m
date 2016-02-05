@@ -1,11 +1,3 @@
-//
-//  AddGiftViewController.m
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/3/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import "AddGiftViewController.h"
 
 @interface AddGiftViewController ()
@@ -17,6 +9,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"ADD GIFT";
 }
 
 - (void)didReceiveMemoryWarning {

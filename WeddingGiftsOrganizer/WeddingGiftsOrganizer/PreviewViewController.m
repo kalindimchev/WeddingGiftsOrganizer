@@ -1,11 +1,3 @@
-//
-//  PreviewViewController.m
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/4/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import "PreviewViewController.h"
 
 @interface PreviewViewController ()
@@ -16,7 +8,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"MODEL";
+}
+
+-(void) backToAddView {
+    
 }
 
 - (void)didReceiveMemoryWarning {
