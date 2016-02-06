@@ -2,7 +2,6 @@
 
 @interface TempData()
 
-
 @property NSMutableArray *giftsCollection;
 
 @end

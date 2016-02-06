@@ -1,28 +1,23 @@
-#import "GiftsViewController.h"
+#import "GiftsTableTableViewController.h"
 #import "AppDelegate.h"
 #import "GiftModel.h"
 #import "GiftCell.h"
 #import "DetailViewController.h"
 
-@interface GiftsViewController ()
-
-@property (strong, nonatomic) NSArray *tempData;
+@interface GiftsTableTableViewController ()
 
 @end
 
-@implementation GiftsViewController
+@implementation GiftsTableTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     NSLog(@"home screen loaded");
-    
-    self.title = @"GIFTS";
+
+    self.title = @"GIFTS TABLEVIEW";
     
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     self.giftsData = [delegate.data gifts];
-        
-    self.giftsTableView.dataSource = self;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
@@ -39,12 +34,12 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ => %f", [[self.giftsData objectAtIndex:indexPath.row] model], [[self.giftsData objectAtIndex:indexPath.row] price]];
     
-//    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
-//    
-//    cell.modelLabel = [NSString stringWithFormat:@"%@", [self.giftsData[indexPath.row] model]];
-//    cell.stateLabel = [NSString stringWithFormat:@"%f", [self.giftsData[indexPath.row] price]];
-//    cell.giftImageView.image = img;
-
+    //    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
+    //
+    //    cell.modelLabel = [NSString stringWithFormat:@"%@", [self.giftsData[indexPath.row] model]];
+    //    cell.stateLabel = [NSString stringWithFormat:@"%f", [self.giftsData[indexPath.row] price]];
+    //    cell.giftImageView.image = img;
+    
     return cell;
 }
 
@@ -77,6 +72,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)tapAddBtn:(id)sender {
-}
+
+
 @end

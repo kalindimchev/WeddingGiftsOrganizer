@@ -19,6 +19,9 @@
 		E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2C61C6461B400D43018 /* PreviewViewController.m */; };
 		E2DDD2CA1C64765400D43018 /* GiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DDD2C91C64765400D43018 /* GiftCell.xib */; };
 		E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CC1C64774D00D43018 /* GiftCell.m */; };
+		E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CF1C64844000D43018 /* DetailViewController.m */; };
+		E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */; };
+		E2DDD2D61C65694800D43018 /* GiftsTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2D51C65694800D43018 /* GiftsTableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,12 @@
 		E2DDD2C91C64765400D43018 /* GiftCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftCell.xib; sourceTree = "<group>"; };
 		E2DDD2CB1C64774D00D43018 /* GiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
 		E2DDD2CC1C64774D00D43018 /* GiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
+		E2DDD2CE1C64844000D43018 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E2DDD2CF1C64844000D43018 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipateViewController.h; sourceTree = "<group>"; };
+		E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipateViewController.m; sourceTree = "<group>"; };
+		E2DDD2D41C65694800D43018 /* GiftsTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftsTableTableViewController.h; sourceTree = "<group>"; };
+		E2DDD2D51C65694800D43018 /* GiftsTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftsTableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +134,12 @@
 				E2DDD2C61C6461B400D43018 /* PreviewViewController.m */,
 				E2D3DAFD1C603351006D6E3D /* GiftsViewController.h */,
 				E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */,
+				E2DDD2CE1C64844000D43018 /* DetailViewController.h */,
+				E2DDD2CF1C64844000D43018 /* DetailViewController.m */,
+				E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */,
+				E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */,
+				E2DDD2D41C65694800D43018 /* GiftsTableTableViewController.h */,
+				E2DDD2D51C65694800D43018 /* GiftsTableTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -212,11 +227,14 @@
 			files = (
 				E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */,
 				E2D3DAFF1C603351006D6E3D /* GiftsViewController.m in Sources */,
+				E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */,
 				E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */,
 				E247CA7E1C62014C008F9DFA /* TempData.m in Sources */,
 				E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */,
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
+				E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */,
 				E2D3DAF91C603351006D6E3D /* main.m in Sources */,
+				E2DDD2D61C65694800D43018 /* GiftsTableTableViewController.m in Sources */,
 				E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
