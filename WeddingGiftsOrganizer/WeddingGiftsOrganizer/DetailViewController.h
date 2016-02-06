@@ -13,4 +13,5 @@
 
 - (IBAction)tapWebSiteButton:(id)sender;
 - (IBAction)tapTelButton:(id)sender;
+- (IBAction)tapParticipateButton:(id)sender;
 @end

@@ -5,4 +5,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *modelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stateLabel;
 
+
+
+
 @end

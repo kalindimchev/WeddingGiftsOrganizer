@@ -40,20 +40,22 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //GiftCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
+    GiftCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
     
     if (cell == nil) {
-        //cell = [[[NSBundle mainBundle] loadNibNamed:@"GiftCell" owner:self options:nil] objectAtIndex:0];
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"giftCell"];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"GiftCell" owner:self options:nil] objectAtIndex:0];
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"giftCell"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ => %.0f lv / %.0f lv", [[[self.giftsData objectAtIndex:indexPath.row]  model] substringWithRange:NSMakeRange(0, 10)], [[self.giftsData objectAtIndex:indexPath.row] price], [[self.giftsData objectAtIndex:indexPath.row] remainingPrice]];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@ => %.0f lv / %.0f lv", [[[self.giftsData objectAtIndex:indexPath.row]  model] substringWithRange:NSMakeRange(0, 10)], [[self.giftsData objectAtIndex:indexPath.row] price], [[self.giftsData objectAtIndex:indexPath.row] remainingPrice]];
+    GiftModel *currentGift = [self.giftsData objectAtIndex:indexPath.row];
     
-//    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
-//    
-//    cell.modelLabel = [NSString stringWithFormat:@"%@", [self.giftsData[indexPath.row] model]];
-//    cell.stateLabel = [NSString stringWithFormat:@"%f", [self.giftsData[indexPath.row] price]];
-//    cell.giftImageView.image = img;
+    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
+
+    cell.modelLabel.text = currentGift.model;
+    cell.stateLabel.text = [NSString stringWithFormat:@"%.0f", currentGift.remainingPrice];
+    //cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0f", currentGift.price];
+    cell.giftImageView.image = img;
 
     return cell;
 }
