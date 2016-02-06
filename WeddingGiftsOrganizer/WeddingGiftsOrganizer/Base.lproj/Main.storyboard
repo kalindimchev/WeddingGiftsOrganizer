@@ -60,28 +60,10 @@
             </objects>
             <point key="canvasLocation" x="4033.5" y="216"/>
         </scene>
-        <!--Gifts Table Table View Controller-->
-        <scene sceneID="Nf5-aa-dYn">
-            <objects>
-                <tableViewController id="geH-Sp-UDy" customClass="GiftsTableTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UpH-uP-Mrw">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="geH-Sp-UDy" id="kNx-gI-c54"/>
-                            <outlet property="delegate" destination="geH-Sp-UDy" id="NYu-GU-KKz"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="qxW-Ah-GXC"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VYg-Nh-LFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4033.5" y="903"/>
-        </scene>
         <!--Add Gift View Controller-->
         <scene sceneID="Twe-4p-ueX">
             <objects>
-                <viewController id="a4X-yI-LBZ" customClass="AddGiftViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addGiftScene" id="a4X-yI-LBZ" customClass="AddGiftViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qdX-zc-1id"/>
                         <viewControllerLayoutGuide type="bottom" id="VrO-Mk-Sgj"/>
@@ -513,24 +495,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUY-YX-pJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3225" y="216"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="S9G-qR-5rD">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aDh-CA-t9o" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tfq-2I-e2w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="geH-Sp-UDy" kind="relationship" relationship="rootViewController" id="rwW-3B-92l"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VLk-Wa-qcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3225" y="903"/>
         </scene>
     </scenes>
 </document>

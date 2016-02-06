@@ -21,8 +21,11 @@
     
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     self.giftsData = [delegate.data gifts];
+
+    [self.giftsTableView setAllowsSelection:YES];
         
     self.giftsTableView.dataSource = self;
+    self.giftsTableView.delegate = self;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView

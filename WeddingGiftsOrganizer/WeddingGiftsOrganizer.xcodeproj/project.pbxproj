@@ -21,7 +21,6 @@
 		E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CC1C64774D00D43018 /* GiftCell.m */; };
 		E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CF1C64844000D43018 /* DetailViewController.m */; };
 		E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */; };
-		E2DDD2D61C65694800D43018 /* GiftsTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2D51C65694800D43018 /* GiftsTableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +49,6 @@
 		E2DDD2CF1C64844000D43018 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipateViewController.h; sourceTree = "<group>"; };
 		E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipateViewController.m; sourceTree = "<group>"; };
-		E2DDD2D41C65694800D43018 /* GiftsTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftsTableTableViewController.h; sourceTree = "<group>"; };
-		E2DDD2D51C65694800D43018 /* GiftsTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftsTableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +135,6 @@
 				E2DDD2CF1C64844000D43018 /* DetailViewController.m */,
 				E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */,
 				E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */,
-				E2DDD2D41C65694800D43018 /* GiftsTableTableViewController.h */,
-				E2DDD2D51C65694800D43018 /* GiftsTableTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -234,7 +229,6 @@
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
 				E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */,
 				E2D3DAF91C603351006D6E3D /* main.m in Sources */,
-				E2DDD2D61C65694800D43018 /* GiftsTableTableViewController.m in Sources */,
 				E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

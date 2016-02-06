@@ -13,6 +13,8 @@
     self.data = [[TempData alloc] init];
     
     NSArray *gifts = [NSArray arrayWithObjects:
+                          [GiftModel giftWithModel:@"Телевизор LG 43UF7787" giftDescription:@"43(109 СМ) 4K ULTRA HD ТЕЛЕВИЗОР" webSiteUrl:@"http://www.technomarket.bg/televizor/lg-43uf7787-09142365" phoneNumber:@"029209580" address:@"бул. Ал.Стамболийски 101, етаж -2" imageUrl:@"http://thumbs1.ebaystatic.com/d/l225/m/mxdUzCB07DvB5zNsI7WJHEw.jpg" andPrice:1300],
+                      
                           [GiftModel giftWithModel:@"Телевизор LG 43UF7787" giftDescription:@"43(109 СМ) 4K ULTRA HD ТЕЛЕВИЗОР" webSiteUrl:@"http://www.technomarket.bg/televizor/lg-43uf7787-09142365" phoneNumber:@"029209580" address:@"бул. Ал.Стамболийски 101, етаж -2" imageUrl:@"http://cdn.technomarket.bg/uploads/library/product/09142365/560b98009ae99.jpeg" andPrice:1300],
     
                           [GiftModel giftWithModel:@"Кафемашина Philips Saeco HD8425/19" giftDescription:@"Мощност, W: 950" webSiteUrl:@"https://zora.bg/philips-saeco/hd842519/22966" phoneNumber:@"070018222" address:@"София, ул. Околовръстен път 106A /между Драгалевци и Симеоново/" imageUrl:@"https://zora.bg/image/t8/product_image_8556.jpg" andPrice:300],
