@@ -28,9 +28,17 @@
     self.giftsTableView.delegate = self;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    self.giftsData = [delegate.data gifts];
+    [self.giftsTableView reloadData];
+    
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //GiftModel *currentGift = [self.giftsData objectAtIndex:indexPath.row];
     
     //GiftCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
@@ -39,8 +47,7 @@
         //cell = [[[NSBundle mainBundle] loadNibNamed:@"GiftCell" owner:self options:nil] objectAtIndex:0];
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"giftCell"];
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ => %f", [[self.giftsData objectAtIndex:indexPath.row] model], [[self.giftsData objectAtIndex:indexPath.row] price]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ => %.0f lv / %.0f lv", [[[self.giftsData objectAtIndex:indexPath.row]  model] substringWithRange:NSMakeRange(0, 10)], [[self.giftsData objectAtIndex:indexPath.row] price], [[self.giftsData objectAtIndex:indexPath.row] remainingPrice]];
     
 //    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
 //    

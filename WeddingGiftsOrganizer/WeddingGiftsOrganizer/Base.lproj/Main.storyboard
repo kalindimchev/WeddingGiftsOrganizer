@@ -8,7 +8,7 @@
         <!--Gifts View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GiftsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="giftsTableViewScene" id="BYZ-38-t0r" customClass="GiftsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -151,7 +151,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="tapPreviewBtn:" destination="a4X-yI-LBZ" eventType="touchUpInside" id="omg-3f-7gd"/>
-                                    <segue destination="oJx-he-EkB" kind="show" id="S7j-Cn-PyD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,7 +197,7 @@
         <!--Preview View Controller-->
         <scene sceneID="gXC-Jj-ChZ">
             <objects>
-                <viewController id="oJx-he-EkB" customClass="PreviewViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="previewScene" id="oJx-he-EkB" customClass="PreviewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e3e-MQ-rHq"/>
                         <viewControllerLayoutGuide type="bottom" id="TAQ-vK-OgQ"/>
@@ -213,7 +212,7 @@
                                     <rect key="frame" x="20" y="77" width="360" height="181"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQc-kv-X0R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQc-kv-X0R">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -335,24 +334,6 @@
                                     <rect key="frame" x="20" y="274" width="250" height="56"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WebSite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e8-PP-3Oa">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="338" width="360" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beu-mX-1Yp">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="392" width="360" height="21"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOa-3j-H3f">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -386,28 +367,47 @@
                                     <segue destination="Kg6-7e-ZJz" kind="show" id="T3R-MC-FB3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTr-0A-r7B">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="343" width="360" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapWebSiteButton:" destination="mzD-CD-wZK" eventType="touchUpInside" id="Sa8-hu-BGL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beu-mX-1Yp">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="392" width="360" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1aT-Kd-t89"/>
                                 <exclude reference="cms-Go-hJF"/>
-                                <exclude reference="0e8-PP-3Oa"/>
-                                <exclude reference="beu-mX-1Yp"/>
                                 <exclude reference="IOa-3j-H3f"/>
                                 <exclude reference="aqN-M0-T1j"/>
                                 <exclude reference="vIU-3V-Gm1"/>
+                                <exclude reference="pTr-0A-r7B"/>
+                                <exclude reference="beu-mX-1Yp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1aT-Kd-t89"/>
                                 <include reference="cms-Go-hJF"/>
-                                <include reference="0e8-PP-3Oa"/>
-                                <include reference="beu-mX-1Yp"/>
                                 <include reference="IOa-3j-H3f"/>
                                 <include reference="aqN-M0-T1j"/>
                                 <include reference="vIU-3V-Gm1"/>
+                                <include reference="pTr-0A-r7B"/>
+                                <include reference="beu-mX-1Yp"/>
                             </mask>
                         </variation>
                     </view>
@@ -416,7 +416,8 @@
                         <outlet property="giftImageView" destination="1aT-Kd-t89" id="4VS-HH-nuT"/>
                         <outlet property="modelLabel" destination="aqN-M0-T1j" id="xMB-RL-ntI"/>
                         <outlet property="priceLabel" destination="cms-Go-hJF" id="I3o-zs-daz"/>
-                        <outlet property="webSiteLabel" destination="0e8-PP-3Oa" id="HVB-GX-vQG"/>
+                        <outlet property="tapWebSiteButton" destination="pTr-0A-r7B" id="GDz-IS-Dmh"/>
+                        <outlet property="webSiteButton" destination="pTr-0A-r7B" id="rJz-ee-MeV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l16-ne-diF" userLabel="First Responder" sceneMemberID="firstResponder"/>

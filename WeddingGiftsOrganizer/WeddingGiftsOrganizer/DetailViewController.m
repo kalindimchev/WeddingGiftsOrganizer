@@ -11,8 +11,8 @@
     
     self.modelLabel.text = self.gift.model;
     self.giftImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.gift.imageUrl]]];
-    self.priceLabel.text = [NSString stringWithFormat:@"Price: %f", self.gift.price, nil];
-    self.webSiteLabel.text = self.gift.webSiteUrl;
+    self.priceLabel.text = [NSString stringWithFormat:@"Price: %.0f", self.gift.price, nil];
+    [self.webSiteButton setTitle:self.gift.webSiteUrl forState:UIControlStateNormal];
     self.addressLabel.text = self.gift.address;
     
 }
@@ -31,6 +31,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)tapWebSiteButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.webSiteButton.titleLabel.text]];
+}
 
 - (IBAction)tapTelButton:(id)sender {
 }

@@ -1,4 +1,6 @@
 #import "PreviewViewController.h"
+#import "GiftsViewController.h"
+#import "AppDelegate.h"
 
 @interface PreviewViewController ()
 
@@ -9,7 +11,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"MODEL";
+    self.title = self.gift.model;
 }
 
 -(void) backToAddView {
@@ -21,19 +23,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)tapTelBtn:(id)sender {
 }
 
 - (IBAction)tapAddBtn:(id)sender {
+    NSString *storyBoardId = @"giftsTableViewScene";
+    
+    GiftsViewController *giftsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+    
+    [self.navigationController pushViewController:giftsVC animated:YES];
+    
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    [delegate.data addGift:self.gift];
 }
 @end

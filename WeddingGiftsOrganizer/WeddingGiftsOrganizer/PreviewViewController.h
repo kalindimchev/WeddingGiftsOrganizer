@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
+#import "GiftModel.h"
 
 @interface PreviewViewController : UIViewController
+@property (strong, nonatomic) GiftModel *gift;
 @property (weak, nonatomic) IBOutlet UILabel *modelLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;

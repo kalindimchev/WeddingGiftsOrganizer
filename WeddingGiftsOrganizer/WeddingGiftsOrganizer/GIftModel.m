@@ -17,7 +17,8 @@
         self.giftDescription = giftDescription;
         self.webSiteUrl = webSiteUrl;
         self.phoneNumber = phoneNumber;
-        self.address = imageUrl;
+        self.address = address;
+        self.imageUrl = imageUrl;
         self.participants = [NSMutableArray arrayWithObjects:@"", nil];
         self.price = price;
         self.paidPrice = 0;
