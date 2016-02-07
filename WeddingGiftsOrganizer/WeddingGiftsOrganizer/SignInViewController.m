@@ -12,7 +12,7 @@
 @implementation SignInViewController
 
 - (IBAction)tapSignInButton:(id)sender {
-    NSString *dbURL = @"https://testappkalin.firebaseio.com/users";
+    NSString *dbURL = @"https://testappkalin.firebaseio.com/Users";
     
     Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
     
