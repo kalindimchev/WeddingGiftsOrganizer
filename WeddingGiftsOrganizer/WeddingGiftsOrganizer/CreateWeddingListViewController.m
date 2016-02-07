@@ -19,7 +19,7 @@
     NSDictionary *list = @{
                            @"name": self.nameTextField.text,
                            @"password": self.passwordTextField.text,
-                           @"gifts": [NSArray array]
+                           @"gifts": [NSArray arrayWithObjects:@"asdfsdf", @"sfasdfas", @"dddd", nil]
                            };
     
     NSDictionary *lists = @{
