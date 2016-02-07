@@ -53,8 +53,19 @@
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
 
     cell.modelLabel.text = currentGift.model;
-    cell.stateLabel.text = [NSString stringWithFormat:@"%.0f", currentGift.remainingPrice];
+    //cell.stateLabel.text = [NSString stringWithFormat:@"%.0f", currentGift.remainingPrice];
     //cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0f", currentGift.price];
+    if (currentGift.remainingPrice > 0) {
+        cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0flv / Remaining: %.0flv", currentGift.price, currentGift.remainingPrice];
+        cell.stateLabel.textColor = [UIColor redColor];
+    }
+    else {
+        cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0flv / Full Paid!", currentGift.price, currentGift.remainingPrice];
+        //cell.stateLabel.textColor = [UIColor colorWithRed:50 green:135 blue:50 alpha:1];
+        cell.stateLabel.textColor = [UIColor blueColor];
+
+    }
+    
     cell.giftImageView.image = img;
 
     return cell;

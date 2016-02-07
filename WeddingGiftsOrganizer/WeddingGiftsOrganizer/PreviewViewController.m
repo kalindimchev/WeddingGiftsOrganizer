@@ -12,6 +12,10 @@
     [super viewDidLoad];
     
     self.title = self.gift.model;
+    self.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.gift.imageUrl]]];
+    self.priceLabel.text = [NSString stringWithFormat:@"Price: %.0f", self.gift.price, nil];
+    self.webSiteLabel.text =  self.gift.webSiteUrl;
+    self.addressLabel.text = self.gift.address;
 }
 
 -(void) backToAddView {

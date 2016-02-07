@@ -13,6 +13,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"ADD GIFT";
+    NSLog(@"hui");
 }
 
 - (void)didReceiveMemoryWarning {
