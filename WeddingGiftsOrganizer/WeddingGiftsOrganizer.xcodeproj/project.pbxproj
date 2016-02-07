@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DC98090B44CA9ADECD3AB88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 819BDCD2AA6C34873C221504 /* libPods.a */; };
 		E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E247CA791C61CE94008F9DFA /* GiftModel.m */; };
 		E247CA7E1C62014C008F9DFA /* TempData.m in Sources */ = {isa = PBXBuildFile; fileRef = E247CA7D1C62014C008F9DFA /* TempData.m */; };
 		E2D3DAF91C603351006D6E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAF81C603351006D6E3D /* main.m */; };
@@ -21,9 +22,15 @@
 		E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CC1C64774D00D43018 /* GiftCell.m */; };
 		E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CF1C64844000D43018 /* DetailViewController.m */; };
 		E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */; };
+		E2EAAC561C67856700442691 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC551C67856700442691 /* LoginViewController.m */; };
+		E2EAAC591C6793CF00442691 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC581C6793CF00442691 /* SignInViewController.m */; };
+		E2EAAC5C1C6795EE00442691 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC5B1C6795EE00442691 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0879C3555443F143E539E5CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		819BDCD2AA6C34873C221504 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA58D61DEF03FBDE0B0D988 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E247CA781C61CE94008F9DFA /* GiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftModel.h; sourceTree = "<group>"; };
 		E247CA791C61CE94008F9DFA /* GiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftModel.m; sourceTree = "<group>"; };
 		E247CA7C1C62014C008F9DFA /* TempData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempData.h; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		E2DDD2CF1C64844000D43018 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipateViewController.h; sourceTree = "<group>"; };
 		E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipateViewController.m; sourceTree = "<group>"; };
+		E2EAAC531C67848D00442691 /* WeddingGiftsOrganizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingGiftsOrganizer-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2EAAC541C67856700442691 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E2EAAC551C67856700442691 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E2EAAC571C6793CF00442691 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		E2EAAC581C6793CF00442691 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		E2EAAC5A1C6795EE00442691 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		E2EAAC5B1C6795EE00442691 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +70,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC98090B44CA9ADECD3AB88 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8656E4C4C8603757A354F720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACA58D61DEF03FBDE0B0D988 /* Pods.debug.xcconfig */,
+				0879C3555443F143E539E5CD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE3C4339899104314CD22675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				819BDCD2AA6C34873C221504 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E247CA771C61CE3A008F9DFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E247CA781C61CE94008F9DFA /* GiftModel.h */,
 				E247CA791C61CE94008F9DFA /* GiftModel.m */,
+				E2EAAC5A1C6795EE00442691 /* UserModel.h */,
+				E2EAAC5B1C6795EE00442691 /* UserModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -85,6 +119,8 @@
 			children = (
 				E2D3DAF61C603351006D6E3D /* WeddingGiftsOrganizer */,
 				E2D3DAF51C603351006D6E3D /* Products */,
+				8656E4C4C8603757A354F720 /* Pods */,
+				CE3C4339899104314CD22675 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +146,7 @@
 				E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */,
 				E2D3DB081C603351006D6E3D /* Info.plist */,
 				E2D3DAF71C603351006D6E3D /* Supporting Files */,
+				E2EAAC531C67848D00442691 /* WeddingGiftsOrganizer-Bridging-Header.h */,
 			);
 			path = WeddingGiftsOrganizer;
 			sourceTree = "<group>";
@@ -135,6 +172,10 @@
 				E2DDD2CF1C64844000D43018 /* DetailViewController.m */,
 				E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */,
 				E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */,
+				E2EAAC541C67856700442691 /* LoginViewController.h */,
+				E2EAAC551C67856700442691 /* LoginViewController.m */,
+				E2EAAC571C6793CF00442691 /* SignInViewController.h */,
+				E2EAAC581C6793CF00442691 /* SignInViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -156,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2D3DB0B1C603351006D6E3D /* Build configuration list for PBXNativeTarget "WeddingGiftsOrganizer" */;
 			buildPhases = (
+				252ADD07517E83EFF7D95CB1 /* Check Pods Manifest.lock */,
 				E2D3DAF01C603351006D6E3D /* Sources */,
 				E2D3DAF11C603351006D6E3D /* Frameworks */,
 				E2D3DAF21C603351006D6E3D /* Resources */,
+				B926CB772A50D64BD2153E18 /* Embed Pods Frameworks */,
+				53B162C805C263D2B9951F1A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +259,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		252ADD07517E83EFF7D95CB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53B162C805C263D2B9951F1A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B926CB772A50D64BD2153E18 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2D3DAF01C603351006D6E3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,11 +316,14 @@
 				E2D3DAFF1C603351006D6E3D /* GiftsViewController.m in Sources */,
 				E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */,
 				E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */,
+				E2EAAC591C6793CF00442691 /* SignInViewController.m in Sources */,
 				E247CA7E1C62014C008F9DFA /* TempData.m in Sources */,
 				E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */,
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
+				E2EAAC5C1C6795EE00442691 /* UserModel.m in Sources */,
 				E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */,
 				E2D3DAF91C603351006D6E3D /* main.m in Sources */,
+				E2EAAC561C67856700442691 /* LoginViewController.m in Sources */,
 				E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +434,7 @@
 		};
 		E2D3DB0C1C603351006D6E3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA58D61DEF03FBDE0B0D988 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeddingGiftsOrganizer/Info.plist;
@@ -350,6 +446,7 @@
 		};
 		E2D3DB0D1C603351006D6E3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0879C3555443F143E539E5CD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeddingGiftsOrganizer/Info.plist;
