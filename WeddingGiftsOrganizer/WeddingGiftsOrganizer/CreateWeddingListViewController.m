@@ -1,30 +1,19 @@
 #import "CreateWeddingListViewController.h"
 #import "GiftModel.h"
+#import "WeddingsViewController.h";
 #import <Firebase/Firebase.h>
 
 @implementation CreateWeddingListViewController
 
 - (IBAction)tapCreateWeddingListButton:(id)sender {
-    NSString *dbURL = @"https://testappkalin.firebaseio.com/WeddingLists";
+    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com/Weddings";
     
     Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
     
-    NSDictionary *photo = @{
-                            @"model": @"gotin",
-                            @"descc": @"tashak",
-                            @"price": @"dobremmm",
-                            @"address": @"burgas"
-                            };
-    NSDictionary *photoo = @{
-                            @"model": @"gotin",
-                            @"descc": @"tashak",
-                            @"price": @"dobremmm",
-                            @"address": @"burgas"
-                            };
+
     NSDictionary *list = @{
                            @"name": self.nameTextField.text,
                            @"password": self.passwordTextField.text,
-                           @"gifts": [NSArray arrayWithObjects:photo, photoo, nil]
                            };
     
     NSDictionary *lists = @{
@@ -32,5 +21,11 @@
                             };
     
     [db updateChildValues: lists];
+    
+    NSString *storyBoardId = @"weddingsTableViewScene";
+    
+    WeddingsViewController *weddingsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+    
+    [self.navigationController pushViewController:weddingsVC animated:YES];
 }
 @end

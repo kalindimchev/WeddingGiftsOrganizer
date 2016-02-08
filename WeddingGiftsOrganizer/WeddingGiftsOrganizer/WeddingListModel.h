@@ -15,11 +15,9 @@
 @property (strong, nonatomic) NSMutableArray *gifts;
 
 -(instancetype) initWithName: (NSString*) name
-                    password: (NSString*) password
-                    andGifts: (NSMutableArray*) gifts;
+                    andPassword: (NSString*) password;
 
 +(WeddingListModel*) weddingListWithName: (NSString*) name
-                                password: (NSString*) password
-                                andGifts: (NSMutableArray*) gifts;
+                                andPassword: (NSString*) password;
 
 @end

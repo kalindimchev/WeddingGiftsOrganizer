@@ -14,18 +14,38 @@
     
     self.data = [[TempData alloc] init];
     
-    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com/Gifts";
+    NSString *dbGiftsUrl = @"https://wedding-gifts-org.firebaseio.com/Gifts";
     
-    Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
+    Firebase *dbGifts = [[Firebase alloc] initWithUrl:dbGiftsUrl];
     
-        [[db queryOrderedByChild:@"model"]
-         observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
+    [[dbGifts queryOrderedByChild:@"model"]
+            observeEventType:FEventTypeChildAdded
+                   withBlock:^(FDataSnapshot *snapshot) {
     
-             NSLog(@"%@ -> %@", snapshot.key, snapshot.value);
-             GiftModel *gift = [[GiftModel alloc] initWithModel:snapshot.value[@"model"] giftDescription:snapshot.value[@"giftDescription"] webSiteUrl:snapshot.value[@"webSiteUrl"] phoneNumber:snapshot.value[@"phoneNumber"] address:snapshot.value[@"address"] imageUrl:snapshot.value[@"imageUrl"] andPrice:[snapshot.value[@"price"] floatValue]];
+        GiftModel *gift = [[GiftModel alloc] initWithModel:snapshot.value[@"model"]
+                                           giftDescription:snapshot.value[@"giftDescription"]
+                                                webSiteUrl:snapshot.value[@"webSiteUrl"]
+                                               phoneNumber:snapshot.value[@"phoneNumber"]
+                                                   address:snapshot.value[@"address"]
+                                                  imageUrl:snapshot.value[@"imageUrl"]
+                                                  andPrice:[snapshot.value[@"price"] floatValue]];
     
-             [self.data addGift:gift];
-         }];
+        [self.data addGift:gift];
+    }];
+    
+    NSString *dbWeddingsURL = @"https://wedding-gifts-org.firebaseio.com/Weddings";
+    
+    Firebase *dbWeddings = [[Firebase alloc] initWithUrl:dbWeddingsURL];
+    
+    [[dbWeddings queryOrderedByChild:@"name"]
+     observeEventType:FEventTypeChildAdded
+     withBlock:^(FDataSnapshot *snapshot) {
+        
+         
+         WeddingListModel *wedding = [[WeddingListModel alloc] initWithName:snapshot.value[@"name"] andPassword:snapshot.value[@"password"]];
+
+         [self.data createWedding:wedding];
+     }];
 
     [NSThread sleepForTimeInterval:7.0f];
 

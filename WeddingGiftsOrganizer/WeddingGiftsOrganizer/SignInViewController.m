@@ -1,11 +1,13 @@
 #import "SignInViewController.h"
 #import "GiftsViewController.h"
+#import "WeddingsViewController.h"
 #import <Firebase/Firebase.h>
 
 @implementation SignInViewController
 
 - (IBAction)tapSignInButton:(id)sender {
-    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com//Users";
+    
+    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com/Users";
     
     Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
     
@@ -21,10 +23,11 @@
     
     [db updateChildValues: users];
     
-    NSString *storyBoardId = @"giftsTableViewScene";
+    NSString *storyBoardId = @"weddingsTableViewScene";
     
-    GiftsViewController *giftsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+    WeddingsViewController *weddingsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
     
-    [self.navigationController pushViewController:giftsVC animated:YES];
+    [self.navigationController pushViewController:weddingsVC animated:YES];
+
 }
 @end

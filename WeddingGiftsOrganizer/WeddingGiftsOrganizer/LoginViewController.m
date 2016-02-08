@@ -1,6 +1,7 @@
 #import "LoginViewController.h"
 #import "SignInViewController.h"
 #import "GiftsViewController.h"
+#import "WeddingsViewController.h"
 #import <Firebase/Firebase.h>
 
 @implementation LoginViewController
@@ -23,11 +24,13 @@
      observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
          
          if (snapshot.value[@"password" ] == self.passwordTextField.text) {
-             NSString *storyBoardId = @"giftsTableViewScene";
-             
+//             NSString *storyBoardId = @"giftsTableViewScene";
+             NSString *storyBoardId = @"weddingsTableViewScene";
+
              GiftsViewController *giftsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
-             
-             [self.navigationController pushViewController:giftsVC animated:YES];
+             WeddingsViewController *weddingsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+
+             [self.navigationController pushViewController:weddingsVC animated:YES];
 
          }
          else {

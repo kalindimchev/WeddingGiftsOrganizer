@@ -6,7 +6,6 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) TempData *data;
-@property (strong, nonatomic) NSMutableArray *g;
 
 @end
 

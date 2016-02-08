@@ -13,7 +13,6 @@
 		E2D3DAF91C603351006D6E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAF81C603351006D6E3D /* main.m */; };
 		E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFB1C603351006D6E3D /* AppDelegate.m */; };
 		E2D3DAFF1C603351006D6E3D /* GiftsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */; };
-		E2D3DB021C603351006D6E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB001C603351006D6E3D /* Main.storyboard */; };
 		E2D3DB041C603351006D6E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB031C603351006D6E3D /* Assets.xcassets */; };
 		E2D3DB071C603351006D6E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */; };
 		E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2C31C63347E00D43018 /* AddGiftViewController.m */; };
@@ -22,11 +21,15 @@
 		E2DDD2CD1C64774D00D43018 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CC1C64774D00D43018 /* GiftCell.m */; };
 		E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2CF1C64844000D43018 /* DetailViewController.m */; };
 		E2DDD2D31C6484F200D43018 /* ParticipateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */; };
+		E2E088411C68577D004C8564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E0883F1C68577D004C8564 /* Main.storyboard */; };
 		E2EAAC561C67856700442691 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC551C67856700442691 /* LoginViewController.m */; };
 		E2EAAC591C6793CF00442691 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC581C6793CF00442691 /* SignInViewController.m */; };
 		E2EAAC5C1C6795EE00442691 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC5B1C6795EE00442691 /* UserModel.m */; };
 		E2EAAC5F1C67A7EC00442691 /* WeddingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC5E1C67A7EC00442691 /* WeddingListModel.m */; };
 		E2EAAC621C67B18B00442691 /* CreateWeddingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC611C67B18B00442691 /* CreateWeddingListViewController.m */; };
+		E2EAAC651C683BD900442691 /* WeddingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC641C683BD900442691 /* WeddingsViewController.m */; };
+		E2EAAC671C6841E100442691 /* WeddingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EAAC661C6841E100442691 /* WeddingCell.xib */; };
+		E2EAAC6D1C6847D200442691 /* WeddingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EAAC6C1C6847D200442691 /* WeddingCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +46,6 @@
 		E2D3DAFB1C603351006D6E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E2D3DAFD1C603351006D6E3D /* GiftsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftsViewController.h; sourceTree = "<group>"; };
 		E2D3DAFE1C603351006D6E3D /* GiftsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftsViewController.m; sourceTree = "<group>"; };
-		E2D3DB011C603351006D6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2D3DB031C603351006D6E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D3DB061C603351006D6E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D3DB081C603351006D6E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		E2DDD2CF1C64844000D43018 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2DDD2D11C6484F200D43018 /* ParticipateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipateViewController.h; sourceTree = "<group>"; };
 		E2DDD2D21C6484F200D43018 /* ParticipateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipateViewController.m; sourceTree = "<group>"; };
+		E2E088401C68577D004C8564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EAAC531C67848D00442691 /* WeddingGiftsOrganizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingGiftsOrganizer-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2EAAC541C67856700442691 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E2EAAC551C67856700442691 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -69,6 +72,11 @@
 		E2EAAC5E1C67A7EC00442691 /* WeddingListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeddingListModel.m; sourceTree = "<group>"; };
 		E2EAAC601C67B18B00442691 /* CreateWeddingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateWeddingListViewController.h; sourceTree = "<group>"; };
 		E2EAAC611C67B18B00442691 /* CreateWeddingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateWeddingListViewController.m; sourceTree = "<group>"; };
+		E2EAAC631C683BD900442691 /* WeddingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeddingsViewController.h; sourceTree = "<group>"; };
+		E2EAAC641C683BD900442691 /* WeddingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeddingsViewController.m; sourceTree = "<group>"; };
+		E2EAAC661C6841E100442691 /* WeddingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeddingCell.xib; sourceTree = "<group>"; };
+		E2EAAC6B1C6847D200442691 /* WeddingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeddingCell.h; sourceTree = "<group>"; };
+		E2EAAC6C1C6847D200442691 /* WeddingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeddingCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +157,8 @@
 				E247CA771C61CE3A008F9DFA /* Models */,
 				E2D3DAFA1C603351006D6E3D /* AppDelegate.h */,
 				E2D3DAFB1C603351006D6E3D /* AppDelegate.m */,
-				E2D3DB001C603351006D6E3D /* Main.storyboard */,
 				E2D3DB031C603351006D6E3D /* Assets.xcassets */,
+				E2E0883F1C68577D004C8564 /* Main.storyboard */,
 				E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */,
 				E2D3DB081C603351006D6E3D /* Info.plist */,
 				E2D3DAF71C603351006D6E3D /* Supporting Files */,
@@ -186,6 +194,8 @@
 				E2EAAC581C6793CF00442691 /* SignInViewController.m */,
 				E2EAAC601C67B18B00442691 /* CreateWeddingListViewController.h */,
 				E2EAAC611C67B18B00442691 /* CreateWeddingListViewController.m */,
+				E2EAAC631C683BD900442691 /* WeddingsViewController.h */,
+				E2EAAC641C683BD900442691 /* WeddingsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +206,9 @@
 				E2DDD2C91C64765400D43018 /* GiftCell.xib */,
 				E2DDD2CB1C64774D00D43018 /* GiftCell.h */,
 				E2DDD2CC1C64774D00D43018 /* GiftCell.m */,
+				E2EAAC661C6841E100442691 /* WeddingCell.xib */,
+				E2EAAC6B1C6847D200442691 /* WeddingCell.h */,
+				E2EAAC6C1C6847D200442691 /* WeddingCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -261,8 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D3DB071C603351006D6E3D /* LaunchScreen.storyboard in Resources */,
+				E2E088411C68577D004C8564 /* Main.storyboard in Resources */,
 				E2D3DB041C603351006D6E3D /* Assets.xcassets in Resources */,
-				E2D3DB021C603351006D6E3D /* Main.storyboard in Resources */,
+				E2EAAC671C6841E100442691 /* WeddingCell.xib in Resources */,
 				E2DDD2CA1C64765400D43018 /* GiftCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,11 +338,13 @@
 			files = (
 				E2EAAC621C67B18B00442691 /* CreateWeddingListViewController.m in Sources */,
 				E2DDD2C41C63347E00D43018 /* AddGiftViewController.m in Sources */,
+				E2EAAC6D1C6847D200442691 /* WeddingCell.m in Sources */,
 				E2D3DAFF1C603351006D6E3D /* GiftsViewController.m in Sources */,
 				E2DDD2D01C64844000D43018 /* DetailViewController.m in Sources */,
 				E247CA7A1C61CE94008F9DFA /* GiftModel.m in Sources */,
 				E2EAAC5F1C67A7EC00442691 /* WeddingListModel.m in Sources */,
 				E2EAAC591C6793CF00442691 /* SignInViewController.m in Sources */,
+				E2EAAC651C683BD900442691 /* WeddingsViewController.m in Sources */,
 				E247CA7E1C62014C008F9DFA /* TempData.m in Sources */,
 				E2DDD2C71C6461B400D43018 /* PreviewViewController.m in Sources */,
 				E2D3DAFC1C603351006D6E3D /* AppDelegate.m in Sources */,
@@ -343,20 +359,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E2D3DB001C603351006D6E3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2D3DB011C603351006D6E3D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E2D3DB051C603351006D6E3D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E2D3DB061C603351006D6E3D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2E0883F1C68577D004C8564 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E088401C68577D004C8564 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

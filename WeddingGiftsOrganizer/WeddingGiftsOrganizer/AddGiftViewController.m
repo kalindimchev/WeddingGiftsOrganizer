@@ -14,7 +14,6 @@
     [super viewDidLoad];
     
     self.title = @"ADD GIFT";
-    NSLog(@"hui");
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,15 +11,14 @@
 @implementation WeddingListModel
 
 -(instancetype) initWithName: (NSString*) name
-                    password: (NSString*) password
-                    andGifts: (NSMutableArray*) gifts {
+                    andPassword: (NSString*) password {
     
     self = [super init];
     
     if (self) {
         self.name = name;
         self.password = password;
-        self.gifts = gifts;
+        self.gifts = [NSMutableArray array];
     }
     
     return self;
@@ -27,10 +26,9 @@
 }
 
 +(WeddingListModel*) weddingListWithName: (NSString*) name
-                                password: (NSString*) password
-                                andGifts: (NSMutableArray*) gifts {
+                                andPassword: (NSString*) password {
     
-    return [[WeddingListModel alloc] initWithName:name password:password andGifts:gifts];
+    return [[WeddingListModel alloc] initWithName:name andPassword:password];
 }
 
 @end

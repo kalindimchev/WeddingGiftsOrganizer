@@ -17,6 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-VQ-WH2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.078065735450000007" green="0.70459325100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="72" width="360" height="448"/>
+                                </variation>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUt-Dk-Ajl">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
@@ -26,29 +34,20 @@
                                 </variation>
                                 <connections>
                                     <action selector="tapAddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1l-2u-KeV"/>
-                                    <segue destination="a4X-yI-LBZ" kind="show" id="Iw7-Ji-3vT"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-VQ-WH2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.078065735450000007" green="0.70459325100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="72" width="360" height="448"/>
-                                </variation>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.82745098039215681" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="CUt-Dk-Ajl"/>
                                 <exclude reference="NWb-VQ-WH2"/>
+                                <exclude reference="CUt-Dk-Ajl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="CUt-Dk-Ajl"/>
                                 <include reference="NWb-VQ-WH2"/>
+                                <include reference="CUt-Dk-Ajl"/>
                             </mask>
                         </variation>
                     </view>
@@ -59,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4951.5" y="216"/>
+            <point key="canvasLocation" x="4954.5" y="216"/>
         </scene>
         <!--Add Gift View Controller-->
         <scene sceneID="Twe-4p-ueX">
@@ -549,6 +548,7 @@
                         <viewControllerLayoutGuide type="bottom" id="WOK-QU-gY2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BW4-KE-Pev">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yu9-4m-FEB">
@@ -640,6 +640,61 @@
             </objects>
             <point key="canvasLocation" x="4245" y="216"/>
         </scene>
+        <!--Weddings View Controller-->
+        <scene sceneID="a1d-HD-Yap">
+            <objects>
+                <viewController storyboardIdentifier="weddingsTableViewScene" id="a9M-bg-dmA" customClass="WeddingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZcE-6j-k8E"/>
+                        <viewControllerLayoutGuide type="bottom" id="icw-hH-F2d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VaU-b5-oDX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21a-GM-ub9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <state key="normal" title="Create Wedding"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="513" width="360" height="74"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapAddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKc-Bf-81h"/>
+                                    <action selector="tapCreateButton:" destination="a9M-bg-dmA" eventType="touchUpInside" id="Iyl-Gk-pMl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c49-4A-obm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="51" width="360" height="449"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="21a-GM-ub9"/>
+                                <exclude reference="c49-4A-obm"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="21a-GM-ub9"/>
+                                <include reference="c49-4A-obm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="weddingsTableView" destination="c49-4A-obm" id="Iod-pm-iLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZ7-aL-dXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3952.5" y="901"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="hgF-QF-xKg">
             <objects>
@@ -649,6 +704,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ohI-9p-9LF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w5c-TS-FPd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7T-ub-Odc">
@@ -771,17 +827,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kh-Bl-eZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4638" y="891"/>
+            <point key="canvasLocation" x="4731" y="901"/>
         </scene>
         <!--Create Wedding List View Controller-->
         <scene sceneID="PuE-x0-oa6">
             <objects>
-                <viewController id="47h-l0-jOR" customClass="CreateWeddingListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createWeddingScene" id="47h-l0-jOR" customClass="CreateWeddingListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9TL-8h-SrH"/>
                         <viewControllerLayoutGuide type="bottom" id="sZQ-zH-jeR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LaR-OH-0VL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-Pa-dDc">
@@ -802,26 +859,6 @@
                                     <rect key="frame" x="20" y="204" width="360" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kx-Im-N7g">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="282" width="360" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-KC-cxS">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Create"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="5" y="354" width="360" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tapCreateWeddingListButton:" destination="47h-l0-jOR" eventType="touchUpInside" id="ldo-32-Mkl"/>
-                                    <action selector="tapSignInButton:" destination="soZ-AK-0Zo" eventType="touchUpInside" id="UeX-y4-Hh6"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0FU-Cc-1Gx">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.99444740060000003" blue="0.71405560639999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -840,37 +877,36 @@
                                     <rect key="frame" x="20" y="233" width="360" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cv4-wJ-0bI">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.99444740060000003" blue="0.71405560639999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-KC-cxS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Create"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="311" width="360" height="30"/>
+                                    <rect key="frame" x="20" y="285" width="360" height="30"/>
                                 </variation>
-                            </textField>
+                                <connections>
+                                    <action selector="tapCreateWeddingListButton:" destination="47h-l0-jOR" eventType="touchUpInside" id="ldo-32-Mkl"/>
+                                    <action selector="tapSignInButton:" destination="soZ-AK-0Zo" eventType="touchUpInside" id="UeX-y4-Hh6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="i7v-Pa-dDc"/>
                                 <exclude reference="6Hg-x7-USq"/>
-                                <exclude reference="3Kx-Im-N7g"/>
-                                <exclude reference="ILQ-KC-cxS"/>
                                 <exclude reference="0FU-Cc-1Gx"/>
                                 <exclude reference="8Nv-Aa-8Ov"/>
-                                <exclude reference="cv4-wJ-0bI"/>
+                                <exclude reference="ILQ-KC-cxS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="i7v-Pa-dDc"/>
                                 <include reference="6Hg-x7-USq"/>
-                                <include reference="3Kx-Im-N7g"/>
-                                <include reference="ILQ-KC-cxS"/>
                                 <include reference="0FU-Cc-1Gx"/>
                                 <include reference="8Nv-Aa-8Ov"/>
-                                <include reference="cv4-wJ-0bI"/>
+                                <include reference="ILQ-KC-cxS"/>
                             </mask>
                         </variation>
                     </view>
@@ -882,7 +918,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rj4-kr-tSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3472.5" y="1055"/>
+            <point key="canvasLocation" x="3226.5" y="901"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q5T-zN-h0Y">

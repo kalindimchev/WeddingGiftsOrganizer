@@ -10,6 +10,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = self.gift.model;
+    
     self.modelLabel.text = self.gift.model;
     self.giftImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.gift.imageUrl]]];
     self.priceLabel.text = [NSString stringWithFormat:@"Price: %.0f", self.gift.price, nil];

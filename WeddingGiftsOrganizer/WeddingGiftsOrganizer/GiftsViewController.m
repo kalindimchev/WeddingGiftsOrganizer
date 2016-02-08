@@ -90,5 +90,10 @@
 }
 
 - (IBAction)tapAddBtn:(id)sender {
+    NSString *storyBoardId = @"addGiftScene";
+    
+    DetailViewController *addGiftVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+    
+    [self.navigationController pushViewController:addGiftVC animated:YES];
 }
 @end
