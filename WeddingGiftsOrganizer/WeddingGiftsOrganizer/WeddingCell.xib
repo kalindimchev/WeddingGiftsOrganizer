@@ -21,6 +21,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
             </tableViewCellContentView>
             <connections>
                 <outlet property="nameLabel" destination="OE5-lP-3dj" id="Tb6-FP-DJj"/>

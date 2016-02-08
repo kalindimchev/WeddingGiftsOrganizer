@@ -459,37 +459,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cc-Pa-Vp3">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
-                                <state key="normal" title="Send Money"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="94" y="207" width="213" height="79"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tapSendMoneyButton:" destination="Kg6-7e-ZJz" eventType="touchUpInside" id="vgC-zX-PRH"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-VE-pDw">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="PE0-a8-6Vp"/>
-                                </constraints>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="PE0-a8-6Vp"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="67" y="341" width="118" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="PE0-a8-6Vp"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xTQ-Wf-RMP">
                                 <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                 <color key="backgroundColor" red="0.78004237870000004" green="1" blue="0.95294335910000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -510,27 +479,35 @@
                                     <rect key="frame" x="94" y="148" width="118" height="29"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cc-Pa-Vp3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <state key="normal" title="Send Money"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="207" width="213" height="48"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapSendMoneyButton:" destination="Kg6-7e-ZJz" eventType="touchUpInside" id="vgC-zX-PRH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="1cc-Pa-Vp3"/>
-                                <exclude reference="ae8-VE-pDw"/>
                                 <exclude reference="xTQ-Wf-RMP"/>
                                 <exclude reference="vIu-Vf-RLb"/>
+                                <exclude reference="1cc-Pa-Vp3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="1cc-Pa-Vp3"/>
-                                <include reference="ae8-VE-pDw"/>
                                 <include reference="xTQ-Wf-RMP"/>
                                 <include reference="vIu-Vf-RLb"/>
+                                <include reference="1cc-Pa-Vp3"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="amountLabel" destination="ae8-VE-pDw" id="76q-gW-Fa6"/>
                         <outlet property="label" destination="vIu-Vf-RLb" id="XCg-GC-yFX"/>
                         <outlet property="stepper" destination="xTQ-Wf-RMP" id="GBO-YM-YrG"/>
                     </connections>
@@ -608,7 +585,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93327323719999999" green="0.88369833890000005" blue="0.85825148969999998" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="yu9-4m-FEB"/>
@@ -666,8 +643,9 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c49-4A-obm">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.87843137250000003" green="0.82745098039999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="51" width="360" height="449"/>
                                 </variation>
@@ -790,7 +768,7 @@
                                 </variation>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93327323719999999" green="0.88369833890000005" blue="0.85825148969999998" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="g7T-ub-Odc"/>
@@ -827,7 +805,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kh-Bl-eZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4731" y="901"/>
+            <point key="canvasLocation" x="4719" y="901"/>
         </scene>
         <!--Create Wedding List View Controller-->
         <scene sceneID="PuE-x0-oa6">
@@ -841,15 +819,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-Pa-dDc">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="125" width="360" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hg-x7-USq">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -859,6 +828,18 @@
                                     <rect key="frame" x="20" y="204" width="360" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-KC-cxS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Create"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="285" width="360" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapCreateWeddingListButton:" destination="47h-l0-jOR" eventType="touchUpInside" id="ldo-32-Mkl"/>
+                                    <action selector="tapSignInButton:" destination="soZ-AK-0Zo" eventType="touchUpInside" id="UeX-y4-Hh6"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0FU-Cc-1Gx">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.99444740060000003" blue="0.71405560639999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -877,36 +858,33 @@
                                     <rect key="frame" x="20" y="233" width="360" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-KC-cxS">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Create"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-Pa-dDc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="285" width="360" height="30"/>
+                                    <rect key="frame" x="20" y="125" width="360" height="21"/>
                                 </variation>
-                                <connections>
-                                    <action selector="tapCreateWeddingListButton:" destination="47h-l0-jOR" eventType="touchUpInside" id="ldo-32-Mkl"/>
-                                    <action selector="tapSignInButton:" destination="soZ-AK-0Zo" eventType="touchUpInside" id="UeX-y4-Hh6"/>
-                                </connections>
-                            </button>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93327323717948718" green="0.88369833887121152" blue="0.85825148973603183" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="i7v-Pa-dDc"/>
                                 <exclude reference="6Hg-x7-USq"/>
+                                <exclude reference="ILQ-KC-cxS"/>
                                 <exclude reference="0FU-Cc-1Gx"/>
                                 <exclude reference="8Nv-Aa-8Ov"/>
-                                <exclude reference="ILQ-KC-cxS"/>
+                                <exclude reference="i7v-Pa-dDc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="i7v-Pa-dDc"/>
                                 <include reference="6Hg-x7-USq"/>
+                                <include reference="ILQ-KC-cxS"/>
                                 <include reference="0FU-Cc-1Gx"/>
                                 <include reference="8Nv-Aa-8Ov"/>
-                                <include reference="ILQ-KC-cxS"/>
+                                <include reference="i7v-Pa-dDc"/>
                             </mask>
                         </variation>
                     </view>

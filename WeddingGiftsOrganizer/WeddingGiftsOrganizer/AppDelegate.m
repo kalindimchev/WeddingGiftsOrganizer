@@ -43,11 +43,10 @@
         
          
          WeddingListModel *wedding = [[WeddingListModel alloc] initWithName:snapshot.value[@"name"] andPassword:snapshot.value[@"password"]];
-
+         wedding.gifts = snapshot.value[@"gifts"];
+         
          [self.data createWedding:wedding];
      }];
-
-    [NSThread sleepForTimeInterval:7.0f];
 
     return YES;
 }

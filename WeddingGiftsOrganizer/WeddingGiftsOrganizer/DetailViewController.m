@@ -31,6 +31,8 @@
 
 
 - (IBAction)tapTelButton:(id)sender {
+   
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", self.gift.phoneNumber]]];
 }
 
 - (IBAction)tapParticipateButton:(id)sender {

@@ -24,7 +24,6 @@
      observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
          
          if (snapshot.value[@"password" ] == self.passwordTextField.text) {
-//             NSString *storyBoardId = @"giftsTableViewScene";
              NSString *storyBoardId = @"weddingsTableViewScene";
 
              GiftsViewController *giftsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];

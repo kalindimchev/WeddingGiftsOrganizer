@@ -1,6 +1,6 @@
 #import "CreateWeddingListViewController.h"
 #import "GiftModel.h"
-#import "WeddingsViewController.h";
+#import "WeddingsViewController.h"
 #import <Firebase/Firebase.h>
 
 @implementation CreateWeddingListViewController
