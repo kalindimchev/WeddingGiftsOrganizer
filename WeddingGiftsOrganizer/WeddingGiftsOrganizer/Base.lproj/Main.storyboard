@@ -638,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPZ-qg-Oap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4242" y="216"/>
+            <point key="canvasLocation" x="4245" y="216"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="hgF-QF-xKg">
@@ -771,7 +771,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kh-Bl-eZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4951.5" y="891"/>
+            <point key="canvasLocation" x="4638" y="891"/>
         </scene>
         <!--Create Wedding List View Controller-->
         <scene sceneID="PuE-x0-oa6">
@@ -882,24 +882,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rj4-kr-tSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4951.5" y="1603"/>
-        </scene>
-        <!--Create Wedding List View Controller-->
-        <scene sceneID="ag1-zl-XyO">
-            <objects>
-                <viewController id="BGl-zQ-Wg3" customClass="CreateWeddingListViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IDo-fW-Cgc"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bw5-yo-MHz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Vlr-hT-HMP">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RBE-B4-Dz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2614.5" y="961"/>
+            <point key="canvasLocation" x="3472.5" y="1055"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q5T-zN-h0Y">

@@ -3,6 +3,8 @@
 #import "GiftModel.h"
 #import "GiftCell.h"
 #import "DetailViewController.h"
+#import <Firebase/Firebase.h>
+
 
 @interface GiftsViewController ()
 
@@ -14,9 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"home screen loaded");
-    
+        
     self.title = @"GIFTS";
     
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
@@ -34,33 +34,30 @@
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     self.giftsData = [delegate.data gifts];
     [self.giftsTableView reloadData];
-    
+
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     GiftCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"giftCell"];
     
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"GiftCell" owner:self options:nil] objectAtIndex:0];
-        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"giftCell"];
     }
-//    cell.textLabel.text = [NSString stringWithFormat:@"%@ => %.0f lv / %.0f lv", [[[self.giftsData objectAtIndex:indexPath.row]  model] substringWithRange:NSMakeRange(0, 10)], [[self.giftsData objectAtIndex:indexPath.row] price], [[self.giftsData objectAtIndex:indexPath.row] remainingPrice]];
+
     GiftModel *currentGift = [self.giftsData objectAtIndex:indexPath.row];
     
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:currentGift.imageUrl]]];
 
     cell.modelLabel.text = currentGift.model;
-    //cell.stateLabel.text = [NSString stringWithFormat:@"%.0f", currentGift.remainingPrice];
-    //cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0f", currentGift.price];
+
     if (currentGift.remainingPrice > 0) {
-        cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0flv / Remaining: %.0flv", currentGift.price, currentGift.remainingPrice];
+        cell.stateLabel.text = [NSString stringWithFormat:@"Remaining: %.0flv", currentGift.remainingPrice];
         cell.stateLabel.textColor = [UIColor redColor];
     }
     else {
-        cell.stateLabel.text = [NSString stringWithFormat:@"Price: %.0flv / Full Paid!", currentGift.price, currentGift.remainingPrice];
+        cell.stateLabel.text = [NSString stringWithFormat:@"Full Paid!", currentGift.remainingPrice];
         //cell.stateLabel.textColor = [UIColor colorWithRed:50 green:135 blue:50 alpha:1];
         cell.stateLabel.textColor = [UIColor blueColor];
 
@@ -71,14 +68,7 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"highlighted");
-}
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSLog(@"Item selected");
     
     NSString *storyBoardId = @"detailGiftScene";
     
@@ -97,7 +87,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)tapAddBtn:(id)sender {

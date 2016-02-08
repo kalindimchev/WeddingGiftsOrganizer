@@ -1,12 +1,5 @@
-//
-//  CreateWeddingListViewController.m
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/7/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import "CreateWeddingListViewController.h"
+#import "GiftModel.h"
 #import <Firebase/Firebase.h>
 
 @implementation CreateWeddingListViewController
@@ -16,10 +9,22 @@
     
     Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
     
+    NSDictionary *photo = @{
+                            @"model": @"gotin",
+                            @"descc": @"tashak",
+                            @"price": @"dobremmm",
+                            @"address": @"burgas"
+                            };
+    NSDictionary *photoo = @{
+                            @"model": @"gotin",
+                            @"descc": @"tashak",
+                            @"price": @"dobremmm",
+                            @"address": @"burgas"
+                            };
     NSDictionary *list = @{
                            @"name": self.nameTextField.text,
                            @"password": self.passwordTextField.text,
-                           @"gifts": [NSArray arrayWithObjects:@"asdfsdf", @"sfasdfas", @"dddd", nil]
+                           @"gifts": [NSArray arrayWithObjects:photo, photoo, nil]
                            };
     
     NSDictionary *lists = @{

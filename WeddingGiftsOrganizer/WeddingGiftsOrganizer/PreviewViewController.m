@@ -1,6 +1,8 @@
 #import "PreviewViewController.h"
 #import "GiftsViewController.h"
 #import "AppDelegate.h"
+#import <Firebase/Firebase.h>
+
 
 @interface PreviewViewController ()
 
@@ -24,9 +26,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 
 - (IBAction)tapTelBtn:(id)sender {
@@ -35,11 +35,33 @@
 - (IBAction)tapAddBtn:(id)sender {
     NSString *storyBoardId = @"giftsTableViewScene";
     
+    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com/Gifts";
+    Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
+    
+    NSDictionary *gift = @{
+                           @"model": self.gift.model,
+                           @"giftDescription": self.gift.giftDescription,
+                           @"webSiteUrl": self.gift.webSiteUrl,
+                           @"phoneNumber": self.gift.phoneNumber,
+                           @"address": self.gift.address,
+                           @"imageUrl": self.gift.imageUrl,
+                           @"price": [NSString stringWithFormat:@"%f", [self.gift price]]
+                           };
+    
+    NSDictionary *gifts = @{
+                            self.gift.model: gift,
+                            };
+    
+    [db updateChildValues: gifts];
+
     GiftsViewController *giftsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
     
     [self.navigationController pushViewController:giftsVC animated:YES];
     
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     [delegate.data addGift:self.gift];
+    
+    
+
 }
 @end

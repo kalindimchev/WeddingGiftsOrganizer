@@ -1,18 +1,11 @@
-//
-//  SignInViewController.m
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/7/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import "SignInViewController.h"
+#import "GiftsViewController.h"
 #import <Firebase/Firebase.h>
 
 @implementation SignInViewController
 
 - (IBAction)tapSignInButton:(id)sender {
-    NSString *dbURL = @"https://testappkalin.firebaseio.com/Users";
+    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com//Users";
     
     Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
     
@@ -27,5 +20,11 @@
                             };
     
     [db updateChildValues: users];
+    
+    NSString *storyBoardId = @"giftsTableViewScene";
+    
+    GiftsViewController *giftsVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+    
+    [self.navigationController pushViewController:giftsVC animated:YES];
 }
 @end

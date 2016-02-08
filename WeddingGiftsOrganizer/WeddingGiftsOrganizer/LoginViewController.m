@@ -1,11 +1,3 @@
-//
-//  LoginViewController.m
-//  WeddingGiftsOrganizer
-//
-//  Created by Kaloian on 2/7/16.
-//  Copyright © 2016 Kalin. All rights reserved.
-//
-
 #import "LoginViewController.h"
 #import "SignInViewController.h"
 #import "GiftsViewController.h"
@@ -23,7 +15,7 @@
 - (IBAction)tapLogInButton:(id)sender {
     BOOL isUserExists = NO;
 
-    NSString *dbURL = @"https://testappkalin.firebaseio.com/Users";
+    NSString *dbURL = @"https://wedding-gifts-org.firebaseio.com/Users";
     
     Firebase *db = [[Firebase alloc] initWithUrl:dbURL];
     
@@ -39,7 +31,6 @@
 
          }
          else {
-             NSLog(@"Nemaaaaa");
              UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In" message:@"Username and Password doesn't match" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
              [alert show];
 
@@ -54,5 +45,6 @@
     SignInViewController *signInVC = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
     
     [self.navigationController pushViewController:signInVC animated:YES];
+   
 }
 @end
